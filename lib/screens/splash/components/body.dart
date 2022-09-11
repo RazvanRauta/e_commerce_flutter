@@ -1,9 +1,9 @@
-import '../../sign_in/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../components/default_button.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
+import '../../sign_in/sign_in_screen.dart';
 import 'splash_content.dart';
 
 class Body extends StatefulWidget {
@@ -17,7 +17,7 @@ class _BodyState extends State<Body> {
   int currentPage = 0;
   List<Map<String, String>> splashData = [
     {
-      "text": "Welcome to Tokoto, Let`s shop!",
+      "text": "Welcome to Tokoto, Let's shop!",
       "image": "assets/images/splash_1.png"
     },
     {

@@ -1,9 +1,10 @@
-import '../../../components/no_account_text.dart';
-import '../../../components/social_card.dart';
-import 'sign_form.dart';
-import '../../../size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../components/no_account_text.dart';
+import '../../../components/social_card.dart';
+import '../../../size_config.dart';
+import 'sign_form.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
