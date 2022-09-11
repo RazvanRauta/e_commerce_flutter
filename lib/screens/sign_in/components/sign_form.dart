@@ -6,6 +6,7 @@ import '../../../constants.dart';
 import '../../../helper/keyboard.dart';
 import '../../../size_config.dart';
 import '../../forgot_password/forgot_password_screen.dart';
+import '../../login_success/login_success_screen.dart';
 
 class SignForm extends StatefulWidget {
   const SignForm({super.key});
@@ -79,7 +80,7 @@ class _SignFormState extends State<SignForm> {
                 _formKey.currentState!.save();
                 // if all are valid then go to success screen
                 KeyboardUtil.hideKeyboard(context);
-                // Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
             },
           ),
