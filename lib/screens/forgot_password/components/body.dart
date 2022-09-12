@@ -1,7 +1,8 @@
-import 'forgot_pass_form.dart';
-import '../../../size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../size_config.dart';
+import 'forgot_pass_form.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
