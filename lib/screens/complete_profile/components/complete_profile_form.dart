@@ -5,6 +5,7 @@ import '../../../components/default_button.dart';
 import '../../../components/form_error.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
+import '../../otp/opt_screen.dart';
 
 class CompleteProfileForm extends StatefulWidget {
   const CompleteProfileForm({super.key});
@@ -64,7 +65,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             text: "Continue",
             press: () {
               if (_formKey.currentState!.validate()) {
-                // Go to otp screen
+                Navigator.pushNamed(context, OtpScreen.routeName);
               }
             },
           )
