@@ -1,7 +1,7 @@
-import '../../../constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../constants.dart';
 import '../../../size_config.dart';
 import 'complete_profile_form.dart';
 
