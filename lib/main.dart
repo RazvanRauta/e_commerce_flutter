@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'presentation/screens/splash/splash_screen.dart';
 import 'routes.dart';
 import 'theme.dart';
 
-void main() {
+Future<void> main() async {
+  await dotenv.load();
+
   runApp(const MyApp());
 }
 

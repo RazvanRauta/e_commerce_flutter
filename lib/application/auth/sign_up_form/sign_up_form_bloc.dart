@@ -108,6 +108,7 @@ class SignUpFormBloc extends Bloc<SignUpFormEvent, SignUpFormState> {
         isSubmitting: true,
         authFailureOrSuccessOption: none(),
       ));
+
       final failureOrSuccess = await forwardedCall(
         emailAddress: state.emailAddress,
         password: state.password,
@@ -115,6 +116,7 @@ class SignUpFormBloc extends Bloc<SignUpFormEvent, SignUpFormState> {
         lastName: state.lastName,
         address: state.address,
       );
+
       emit(state.copyWith(
         isSubmitting: false,
         authFailureOrSuccessOption: some(failureOrSuccess),
